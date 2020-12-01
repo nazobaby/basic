@@ -79,17 +79,7 @@ body {
 	color: yellow;
 	font-size:25px;
 }
-.colonna{
-	display: inline-block;
-	padding:6px;
-	margin-top:40px;
-	margin-left:6px;
-	width:21%;
-	font-size:17px;
-	background-color: rgb(38, 203, 71, 0.5);
-	border-style: solid;
-	border-color: black;
-}
+
 .colonna a{
 	text-decoration: none;
 	color: black;
@@ -100,16 +90,7 @@ body {
 .colonna img:hover{
 	width:80px;
 }
-.Boxdestra{
-	display: inline-box;
-	margin-left:350px;
-	width: 60%;
-	font-size: 17px;
-	font: 20px Luminari, fantasy;
-	background-color: rgb(38, 203, 71, 0.5);
-	border-style: solid;
-	border-color: black;
-}
+
 .Boxdestra h1{
 	text-align: center;
 	font: 30px Luminari, fantasy;
@@ -123,6 +104,32 @@ body {
 .Boxdestra h5{
 	margin-left: 15px;
 }
-.Secondaparte Box{
-	display: inline-box;
+
+.Secondaparte {
+	display: flex;
+	justify-content: space-between;
+}
+
+.colonna, .Boxdestra{
+	border: 1px solid #fff;
+	background-color: rgb(38, 203, 71, 0.5);
+	height: auto;
+	flex: 1;
+	font-size: 17px;
+	font: 20px Luminari,
+	fantasy;
+	border-style: solid;
+	border-color: black;
+}
+
+.primo {
+	background-color: rgb(38, 203, 71, 0.5);
+	flex: initial;
+	width: 25%;
+}
+
+.secondo {
+	background-color: rgb(38, 203, 71, 0.5);
+	flex: initial;
+	width: 75%;
 }
